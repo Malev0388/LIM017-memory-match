@@ -2,31 +2,91 @@ body {
 margin: 0;
 padding: 0;
 background-image: url("img/FondoPantallaInicio.png");
-background-repeat:no-repeat;
+background-repeat: no-repeat;
 background-size: cover;
+background-position: center;
+background-attachment: fixed;
 }
 
-.gameLogotype{
-  display: block;
-  margin-right: auto;
-  margin-left: auto;
-  height: 400px;
-  width: auto;
-  margin-top: 200px;
+.controlsAudioStart{
+  diplay: flex;
+  flex-direction: column;
+  float: right;
+  margin-left: 19px;
+  margin-right: 19px;
+  margin-top: 30px;
+
 }
 
-.buttonProyect{
+.musicStart{
+  display: flex;
+  flex-direction: column;
+  background-color: inherit;
+  border-radius: 100px;
+  border: none;
+  height: 130px;
+  width: 130px;
+  float: right;
+  cursor: pointer;
+  margin: 16px;
+  margin-left: -44px;
+}
+.btnSound-on{
+  display: flex;
+  flex-direction: column;
+  height: 130px;
+  width: 130px;
+  float: right;
+  cursor: pointer;
+}
+
+.btnSound-off{
+  background-image: url("./img/botonApagarSonido.png");
+  display: flex;
+  flex-direction: column;
+  height: 130px;
+  width: 130px;
+  float: right;
+  cursor: pointer;
+}
+
+.welcome-user{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top:-19px;
+  /*margin: 16px;*/
+}
+
+.game-logotype{
+display: flex;
+flex-direction: column;
+align-items: center;
+margin-right: auto;
+margin-left: 115px;
+margin-top: 360px;
+/*margin-top: 40px;*/
+position: fixed;
+}
+
+.logotype {
+  width: 45%;
+}
+
+.button-welcome{
   background-color: #F35435;
   color: white;
   cursor: pointer;
-  border-radius: 30px;
-  margin-top: 40px;
-  margin-bottom: 50px;
+  border-radius: 70px;
+  /*border-radius: 30px;*/
+  margin-top: 30px;
   font-family: sans-serif;
   font-weight: bold;
-  font-size: 28px;
-  height:50px;
-  width:230px;
-  margin-left: 44%;
+  font-size: 40px;
+  height: 70px;
+  width: 320px;
+  /*font-size: 32px;
+  height: 50px;
+  width: 230px;*/
   border: none;
-  }
+}
