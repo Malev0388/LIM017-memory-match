@@ -47,7 +47,12 @@ const App = () => {
   const el = document.createElement('div');
 
   el.className = 'App';
+<<<<<<< HEAD
   el.textContent = 'Hola mundo!';
+=======
+  el.textContent = '';
+
+>>>>>>> 73367e8db68973dbc0f5981b07128d1348ee6c9d
   return el;
 };
 
