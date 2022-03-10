@@ -8,14 +8,50 @@ background-position: center;
 background-attachment: fixed;
 }
 
-.controlsAudioStart{
+.btnOnOff{
+  display: flex;
+  flex-direction: column;
+  float: right;
+  font-family: sans-serif;
+  font-weight: bold;
+  font-size: 20px;
+  text-align: center;
+  color: white;
+  height: 100px;
+  width: 100px;
+  margin-top: 38px;
+  /*margin-left: 19px;*/
+  margin-right: 25px;
+  border-radius: 100px;
+  border: none;
+  box-shadow: 5px 10px 20px #000000;
+  background-color: #FFE53B;
+  background-image: linear-gradient(160deg, #FFE53B 0%, #FF2525 94%);
+  cursor:pointer;
+}
+
+.iconPlay{
+  width: 60%;
+  align-items: center;
+  margin-top: 28px;
+  margin-left: 16px;
+}
+
+.iconPause{
+  background-image: url("img/mute");
+  width: 60%;
+  align-items: center;
+  margin-top: 28px;
+  margin-left: 16px;
+}
+
+/*.controlsAudioStart{
   diplay: flex;
   flex-direction: column;
   float: right;
   margin-left: 19px;
   margin-right: 19px;
   margin-top: 30px;
-
 }
 
 .musicStart{
@@ -37,18 +73,20 @@ background-attachment: fixed;
   height: 130px;
   width: 130px;
   float: right;
+  margin-top:19px;
   cursor: pointer;
 }
 
 .btnSound-off{
-  background-image: url("./img/botonApagarSonido.png");
+  background-image: url("botonApagarSonido.png");
   display: flex;
   flex-direction: column;
   height: 130px;
   width: 130px;
   float: right;
+  margin-top:19px;
   cursor: pointer;
-}
+}*/
 
 .welcome-user{
   display: flex;

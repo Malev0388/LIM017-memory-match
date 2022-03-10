@@ -2,16 +2,19 @@ import App from './components/App.js';
 
 /*document.getElementById('root').appendChild(App());*/
 
-let playPause = document.getElementById("musicStart")
-playPause.addEventListener("click",() => {
-  let count = 0;
+let playPause = document.getElementById("btnPlayPause");
+btnPlayPause.addEventListener("click", function(){
 
-  function playPause() {
-    if (count==0){
-      count=1;
-      audio.play();
-    }else{
-      count=0;
-      audio.pause();
-    }
+let v = document.getElementsByTagName("audio")[0];
+  let sound = false;
+ if (!sound) {
+   v.play();
+   this.innerHTML = "pause";
+   sound = true;
   }
+ else {
+   v.pause();
+   this.innerHTML = "play";
+   sound = false;
+   }
+})
