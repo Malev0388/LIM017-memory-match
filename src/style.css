@@ -1,10 +1,9 @@
 body {
-margin: 0;
-padding: 0;
-background-image: url("img/FondoPantallaInicio.png");
-background-repeat:no-repeat;
-background-size: cover;
+  background: url(img/FondoPantallaInicio.png) no-repeat center fixed;
+  background-size: cover;
+  
 }
+
 
 .gameLogotype{
   display: block;
