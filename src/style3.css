@@ -1,0 +1,113 @@
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif !important;
+    margin: 20px 0;
+    background: rgba(26, 58, 173, 1) !important;
+}
+
+.container h1 {
+    text-align: center;
+    font-size: 5rem;
+}
+
+.container p {
+    font-size: 2rem;
+    margin-left: 240px;
+}
+
+.container button {
+    font-size: 2rem;
+    margin-left: 50px;
+    background: red;
+    color: white;
+    border-radius: 10px;
+}
+
+.grid {
+    max-width: 960px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+
+.card {
+    position: relative;
+    transition: all 0.3s linear;
+    transform-style: preserve-3d;
+    margin: 5px;
+
+}
+
+.card, 
+.back, 
+.front {
+    height:240px;
+    width: 150px;
+
+}
+
+.back, 
+.front {
+    position: absolute;
+    backface-visibility: hidden;
+}
+
+.front {
+    border-radius: 12px;
+    background: rgba(242, 173, 40, 1) url("./Img/cardFront.jpeg") no-repeat center center / contain;
+}
+
+.back {
+    padding: 10px;
+    border-radius: 12px;
+    transform: rotateY(180deg);
+    background-color: #dcf4f6;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.selected {
+    transform: rotateY(180deg);
+}
+
+.match{
+    transform: rotateY(180deg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+
+#youWin{
+	width: 350px;
+	height: 160px;
+	position: absolute;
+	margin-top: 40px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	font-size: 40px;
+	text-transform: uppercase;
+	border-radius: 5px;
+	background-color: rgba(255,198,0,1.00);
+}
+
+#youWin button{
+	width: 140px;
+	color: #fff;
+	margin-top: 10px;
+	font-family: 'Boogaloo', cursive;
+	font-size: 28px;
+	text-transform: uppercase;
+	background-color: rgba(44,114,141,1.00);
+	border-radius: 5px;
+}
