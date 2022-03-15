@@ -2,16 +2,25 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Memory Match</title>
+    <title>Pokemon Memory Match</title>
     <link rel="stylesheet" href="../style2.css" />
   </head>
 
-  <body class="body-user"> 
+  <body class="body-user">
+    <header>
+      <audio src="../audios/intro1.mp3" id="musicHello">
+        Tu navegador no soporta el elemento <code>audio</code>.
+      </audio>
+      <button id="btnPlayPauseTwo" class="btnOnOffTwo"><img id="btnicons-two" class="iconPlay-two" src="../img/playCopia.svg"/></button>
+    </header>
+
     <div id="imagenes1"></div>
     <main class="container">
     <div class="container-style">
     <br>
-    <img class="imageUser" id="imageUser" src="../img/avatarUno.png" />
+    <img class="imageUser" id="imageUser" src="../img/avatar.jpg" />
+    <label for="file" id="upFile"><img class="simboloMas" src="../img/simboloMas.svg"/></label>
+    <input accept="image/*" name="image" class="file" type="file" id="file">
     <h1 class="text-title">¡HOLA!</h1>
     <p class="text-style">Ingresa tu nombre <br/>
       o tu seudónimo </p>
@@ -24,7 +33,8 @@
     </main>
 
     <div id="root"></div>
-    <script src="main.js" type="module"></script>
+    <script src="../ingresarUser.js" type="module"></script>
+
   </body>
 
 </html>
