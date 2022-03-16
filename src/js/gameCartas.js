@@ -174,3 +174,21 @@ const resetGame = () => {
 }
 //boton reset
 button.addEventListener("click", resetGame); 
+
+//////
+let sound;
+const btnPlayPauseTwo = document.getElementById("btnPlayPauseTree");
+btnPlayPauseTwo.addEventListener("click", playPause)
+function playPause(){
+    let v = document.getElementsByTagName("audio")[0];
+   if (!sound) {
+     v.play();
+    sound = true;
+    }
+
+   else {
+    v.pause();
+    sound = false;
+   }
+
+};
