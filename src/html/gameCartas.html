@@ -7,11 +7,20 @@
   </head>
 
   <body>
+    
     <div class="container">
     <h1>Pokemon</h1> 
       <p>Moves: <span>0</span><button class="btn btn-danger">Reset</button></p>
       <p id="timer">Tiempo 0:00</p>
     </div>
+
+    <div>
+      <audio src="../audios/intro1.mp3" id="musicHello">
+        Tu navegador no soporta el elemento <code>audio</code>.
+      </audio>
+      <button id="btnPlayPauseTree" class="btnOnOffTree"><img id="btnicons-tree" class="iconPlay-tree" src="../img/playCopia.svg"/></button>
+    </div>
+
     <div id="game"></div>
     <script src="../js/gameCartas.js" type="module"></script>
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
