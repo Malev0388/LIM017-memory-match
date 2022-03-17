@@ -1,3 +1,35 @@
+
+ul{
+    list-style-type: none;
+    margin:0;
+    padding: 20px;
+    overflow: hidden;
+    background-color:#F2D228;
+    background-image: linear-gradient(160deg, #F35435 0%,#F2D228  94%);
+
+}
+
+li {
+    float: left;
+    padding: 15px;
+    font-weight: bold;
+    font-family: sans-serif;
+    color: white;
+    font-size: 20px;
+}
+.input-jugador{
+    border-radius: 25px;
+    background-color: white;
+    font-size: 20px;
+    color: #1A3AAD;
+    border: none;
+    text-align: center;
+    width: 160px;
+    font-weight: bold;
+    font-family: sans-serif;
+}
+
+/*//////////////////////////////*/
 *
  {
   box-sizing: border-box;
@@ -5,10 +37,11 @@
 
 body {
     font-family: 'Montserrat', sans-serif !important;
-    margin: 20px 0;
+    margin: 0px 0;
   /*  background: rgba(26, 58, 173, 1) !important;*/
 
-    background-color: #1A3AAD;
+    background-color: #1A3AAD no-repeat center ;
+    background-size:cover;
     background-image: linear-gradient(160deg, #1A3AAD 0%, #3589EB 94%);
     
 
@@ -17,20 +50,26 @@ body {
 .container h1 {
     text-align: center;
     font-size: 5rem;
+    
 }
 
 .container p {
     font-size: 2rem;
-    margin-left: 240px;
+    margin-left: 50px;
 }
 
 .container button {
-    font-size: 2rem;
-    margin-left: 50px;
-    background: rgba(242, 173, 40, 1);
-    border-color: red;
-    color: black;
-    border-radius: 10px;
+    margin-top: -5px;
+    font-size: 20px;
+    height: 40px;
+    width: 120px;
+    margin-left: 5px;
+    background: #3589EB;
+    color: white;
+    border-radius: 25px;
+    font-weight: bold;
+    font-family: sans-serif;
+    cursor: pointer;
 }
 
 .grid {
@@ -39,6 +78,7 @@ body {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
+    cursor: pointer;
   }
 
 .card {
@@ -89,32 +129,6 @@ body {
     background-position: center center;
 }
 
-
-#youWin{
-	width: 350px;
-	height: 160px;
-	position: absolute;
-	margin-top: 40px;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
-	font-size: 40px;
-	text-transform: uppercase;
-	border-radius: 5px;
-	background-color: rgba(255,198,0,1.00);
-}
-
-#youWin button{
-	width: 140px;
-	color: #fff;
-	margin-top: 10px;
-	font-family: 'Boogaloo', cursive;
-	font-size: 28px;
-	text-transform: uppercase;
-	background-color: rgba(44,114,141,1.00);
-	border-radius: 5px;
-}
 .text{
     color: white;
 }
@@ -132,7 +146,7 @@ body {
     color: white;
     height: 80px;
     width: 80px;
-    margin-top: -274px;
+    margin-top: -112px;
     /*margin-left: 19px;*/
     margin-right: 17px;
     border-radius: 100px;
