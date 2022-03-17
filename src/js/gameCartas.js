@@ -78,7 +78,7 @@ grid.addEventListener('click', function(event) {
                 if(movimientosDeError ==0){
                   //alerta cuando pierdes
                   swal({
-                    title: "PERDISTE !!!!!",
+                    title: "UPS!",
                     text: "Te quedaste sin movimientos",
                     icon: "error",
                     buttons:["volver a Intentarlo?" , "Volver al Inicio"],               
@@ -130,17 +130,19 @@ const resetGuesses = () => {
 //alert si ganas
 const finishMessage = () => {
   swal({
-    title: "GANASTE !!!!",
-    text: `Lo lograstes con ${moveCount} movimientos ,
+    title: "GANASTE!",
+    text: `Lo lograste con ${moveCount} movimientos ,
      en un tiempo de: ${minutos}:${segundos} `,
     icon: "success",
     buttons: ["volver a Jugar" , "Volver al Inicio"],
     dangerMode: true,
   })
   .then((result) => {
+    //volver al inicio
     if(result){
     location.href=("../index.html")
     }else{
+      //volver a jugar
       window.location.reload()
     }
     console.log(result)
@@ -192,3 +194,4 @@ function playPause(){
    }
 
 };
+

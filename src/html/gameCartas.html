@@ -6,14 +6,17 @@
     <link rel="stylesheet" href="../css/styleCartas.css" />
   </head>
 
-  <body>
-    
-    <div class="container">
-    <h1>Pokemon</h1> 
-      <p>Moves: <span>0</span><button class="btn btn-danger">Reset</button></p>
-      <p id="timer">Tiempo 0:00</p>
-    </div>
-
+  <body >
+    <header>
+      <ul class="container">
+        <li>Jugador(a): 
+        <input id="ingreTexto2" class="input-jugador"></input> </li>
+        <li >Moves: <span>0</span></li>
+        <li id="timer">Tiempo 0:00</li>
+        <li ><button class="btn btn-danger">REINICIAR</button></li>
+      </ul>
+    </header>
+    <br>
     <div>
       <audio src="../audios/intro1.mp3" id="musicHello">
         Tu navegador no soporta el elemento <code>audio</code>.
@@ -22,7 +25,16 @@
     </div>
 
     <div id="game"></div>
+
     <script src="../js/gameCartas.js" type="module"></script>
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+  
+  <script>
+    swal("¡BIENVENID@!","Si fallas en 22 movimientos, tendrás que empezar de nuevo","success")
+    .then((value) => {
+      document.getElementById("ingreTexto2").value=localStorage.getItem("user");
+     });
+  </script>
+  
   </body>
 </html> 
