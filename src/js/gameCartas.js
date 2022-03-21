@@ -1,18 +1,17 @@
 //import App from './components/App.js';
 import pokemon from '../data/pokemon/pokemon.js';
-
 const game = document.querySelector("#game");
-const grid = document.createElement("section");
+const grid = document.createElement("section"); 
 const span = document.querySelector("span");
 const button = document.querySelector("button");
 
 grid.setAttribute("class", "grid");
-
 game.appendChild(grid);
 
 let count = 0;
 let primeraCarta = "";
 let segundaCarta = "";
+let swal;
 
 let previousTarget = null;
 let delay = 1200;
@@ -24,9 +23,8 @@ let movimientosDeError = 10;
 let cartasPokemon = pokemon.items.concat(pokemon.items);
 // vuelve las cartas random
 cartasPokemon.sort(() => 0.5 - Math.random());
-//borrar
-console.log(cartasPokemon);
 cartasPokemon.forEach((item) => {
+
     const card = document.createElement("div");
     card.classList.add("card");
     card.dataset.id = item.id;
@@ -89,12 +87,12 @@ grid.addEventListener('click', function(event) {
                     }else{
                       window.location.reload()
                     }
-                    console.log(result)
+                   // console.log(result)
                   })
                   //va diminuyendo las vidas
                 }else{
                   movimientosDeError = movimientosDeError-1;
-                  console.log("menos vida")
+                 // console.log("menos vida")
                 }
                 
             }
@@ -104,10 +102,11 @@ grid.addEventListener('click', function(event) {
     //cantidad de cartas para ganar
     if(countCardFlipped === 9) {
       setTimeout(finishMessage, 1000);
-    }
+    } 
     moveCount++;
     span.innerText = moveCount;
 });
+
 
 const match = () => {
     let selected = document.querySelectorAll('.selected')
@@ -127,6 +126,7 @@ const resetGuesses = () => {
       card.classList.remove('selected');
     });
 }
+
 //alert si ganas
 const finishMessage = () => {
   swal({
@@ -145,7 +145,7 @@ const finishMessage = () => {
       //volver a jugar
       window.location.reload()
     }
-    console.log(result)
+    //console.log(result)
   })
 }
 /// temporizador
@@ -153,7 +153,7 @@ let segundos = 0;
 let minutos = 0;
 
 function startTimer() {
-  const interval = setInterval(function() {
+   setInterval(function() {
     segundos = checkTime(segundos);
       document.getElementById("timer").innerHTML = `Tiempo ${minutos}:${segundos}`;
       segundos ++;
@@ -192,6 +192,5 @@ function playPause(){
     v.pause();
     sound = false;
    }
-
-};
+}
 
