@@ -123,18 +123,21 @@
     margin-top: 22px;
     margin-left: 12px;
   }
-
-  @media (max-width:800px){
-  .container {
+  
+  @media (max-width:600px) and (min-height:760px){
+  main.container {
     display: flex;
-    flex-wrap: wrap;
-    justify-content:center;
-    align-content: center;
     }
 
+  div.container-style{
+    display: block;
+    height: 500px;
+    width: auto;
   }
-
-
+  .input-style{
+    width:80%;
+  }
+  }
 
   /*.button-icon{
     background-color: rgba(80, 210, 138, 1);
