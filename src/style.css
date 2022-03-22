@@ -130,3 +130,12 @@ position: fixed;
   width: 230px;*/
   border-color: rgba(243, 84, 53, 1);
 }
+
+@media (max-width:800px){
+  .game-logotype{
+    margin-top:52px;
+  }
+  .logotype{
+    width: 52%;
+  }
+}
