@@ -4,7 +4,8 @@
 
 let sound
 const btnPlayPause = document.getElementById("btnPlayPause");
-btnPlayPause.addEventListener("click", function playPause(){
+btnPlayPause.addEventListener("click", 
+function playPause(){
   let v = document.getElementsByTagName("audio")[0];
    if (!sound) {
      v.play();

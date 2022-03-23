@@ -1,6 +1,5 @@
-
 document.getElementById("file").addEventListener("change", loadFile)
-function loadFile() {
+  function loadFile() {
   let image = document.getElementById("imageUser");
   image.src = window.URL.createObjectURL(event.target.files[0]); 
   //base64
