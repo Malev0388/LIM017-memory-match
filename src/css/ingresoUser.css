@@ -98,9 +98,9 @@
     color: white;
     height: 80px;
     width: 80px;
-    margin-top: 12px;
+    margin-top: 8px;
     /*margin-left: 19px;*/
-    margin-right: 17px;
+    margin-right: 13px;
     border-radius: 100px;
     box-shadow: 5px 10px 20px #000000;
     background-color: #FFE53B;
@@ -123,21 +123,91 @@
     margin-top: 22px;
     margin-left: 12px;
   }
-  
-  @media (max-width:600px) and (min-height:760px){
-  main.container {
-    display: flex;
-    }
 
-  div.container-style{
-    display: block;
-    height: 500px;
-    width: auto;
+  @media (max-width:760px){
+    .container{
+      flex-direction: column;
+    }
+    .container-style{
+      height: 20rem;
+      width: auto;
+    }
+    #btnPlayPauseTwo{
+      height: 5rem;
+      width:5rem;
+    }
+    .input-style {
+      height: 40px;
+      width: 236px;
+      margin-top: -11px;
+    }
+    .text-title{
+      display: none;
+    }
+    .text-style {
+      font-size: 1.3em;
+      margin-top: -9px;
+    }
+    .imageUser {
+      border-radius: 50%;
+      height: 110px;
+      width: 110px;
+      margin-top: 2px;
+    }
+    label{
+      height: 35px;
+      width: 35px;
+      margin-right: 113px;
+   }
+   .simboloMas{
+     margin-left: 3px;
+   }
+   .buttonAceptar-style{
+     font-size: 22px;
+     height: 42px;
+     width: 170px;
+     margin-top: -3px;
+   }
   }
-  .input-style{
-    width:80%;
-  }
-  }
+
+  @media (max-height:450px){
+    .container-style{
+      height: 20rem;
+      width: 21rem;
+    }
+    .input-style {
+      height: 40px;
+      width: 236px;
+      margin-top: -11px;
+    }
+    .text-title{
+      display: none;
+    }
+    .text-style {
+      font-size: 1.3em;
+      margin-top: -9px;
+    }
+    .imageUser {
+      border-radius: 50%;
+      height: 110px;
+      width: 110px;
+      margin-top: 2px;
+    }
+    .simboloMas{
+      margin-left: 3px;
+    }
+    .buttonAceptar-style{
+      font-size: 22px;
+      height: 42px;
+      width: 170px;
+      margin-top: -3px;
+    }
+    label{
+      height: 35px;
+      width: 35px;
+      margin-right: 113px;
+   }
+}
 
   /*.button-icon{
     background-color: rgba(80, 210, 138, 1);
