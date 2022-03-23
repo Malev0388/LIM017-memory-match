@@ -47,49 +47,6 @@ body {
   margin-left: 12px;
 }
 
-/*.controlsAudioStart{
-  diplay: flex;
-  flex-direction: column;
-  float: right;
-  margin-left: 19px;
-  margin-right: 19px;
-  margin-top: 30px;
-}
-
-.musicStart{
-  display: flex;
-  flex-direction: column;
-  background-color: inherit;
-  border-radius: 100px;
-  border: none;
-  height: 130px;
-  width: 130px;
-  float: right;
-  cursor: pointer;
-  margin: 16px;
-  margin-left: -44px;
-}
-.btnSound-on{
-  display: flex;
-  flex-direction: column;
-  height: 130px;
-  width: 130px;
-  float: right;
-  margin-top:19px;
-  cursor: pointer;
-}
-
-.btnSound-off{
-  background-image: url("botonApagarSonido.png");
-  display: flex;
-  flex-direction: column;
-  height: 130px;
-  width: 130px;
-  float: right;
-  margin-top:19px;
-  cursor: pointer;
-}*/
-
 .welcome-user{
   display: flex;
   flex-direction: column;
@@ -130,7 +87,20 @@ transform: translate(0%, 35%);
   border-color: rgba(243, 84, 53, 1);
 }
 
-@media (max-width:760px) and (min-width:740px){
+
+@media (max-width:750px){
+  .game-logotype{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: auto;
+    margin-left: 60px;
+    margin-top: 110px;
+    /*margin-top: 40px;*/
+    position: fixed;
+    }
+}
+ @media (max-width:760px) and (min-width:740px){
     .game-logotype{
     /*margin-top:52px;*/
     flex-direction: column;
@@ -140,6 +110,7 @@ transform: translate(0%, 35%);
 
 @media (max-width:740px){
   .logotype{
+    width: 50%;
     height: 11rem;
     width: auto;
   }

@@ -1,57 +1,33 @@
-//import App from './components/App.js';
-import pokemon from '../data/pokemon/pokemon.js';
-import gameCards from './extras.js';
-
-const game = document.querySelector("#game");
-const grid = document.createElement("section"); 
-//const span = document.querySelector("span");
-const button = document.querySelector("button");
-
-grid.setAttribute("class", "grid");
-game.appendChild(grid);
-/*
+// Add event listener to grid
+const span = document.querySelector("span");
 let count = 0;
 let primeraCarta = "";
 let segundaCarta = "";
-let swal;
-
 let previousTarget = null;
+
 let delay = 1200;
 let moveCount = 0;
 let countCardFlipped = 0;
 
 let movimientosDeError = 10;
-*/
+
+let segundos = 0;
+let minutos = 0;
+let swal;
+let sound;
+let v = document.getElementsByTagName("audio")[0];
 //llamamdo al array
-let cartasPokemon = pokemon.items.concat(pokemon.items);
-// vuelve las cartas random
-cartasPokemon.sort(() => 0.5 - Math.random());
-cartasPokemon.forEach((item) => {
-    const card = document.createElement("div");
-    card.classList.add("card");
-    card.dataset.id = item.id;
+//let cartasPokemon = pokemon.items.concat(pokemon.items);
 
-    const front = document.createElement("div");
-    front.classList.add("front");
 
-    const back = document.createElement("div");
-    back.classList.add("back");
-    back.style.backgroundImage = `url(${item.image})`;
-    back.innerText = item.id;
 
-    grid.appendChild(card);
-    card.appendChild(front);
-    card.appendChild(back);
-});
-
-// Add event listener to grid
-grid.addEventListener("click",gameCards.funtionMatch)
-button.addEventListener("click", gameCards.resetGame); 
-
-/*grid.addEventListener('click', function(event) {
-    let clicked = event.target;
+const gameCards ={
+ funtionMatch:function(event) {
+  /////    
+  let clicked = event.target;
     if (clicked.tagName === 'SECTION' || clicked === previousTarget || 
-        clicked.parentElement.classList.contains("match")) {
+        clicked.parentElement.classList.contains("match")) 
+        {
         return;
     }
     if (count < 2) {
@@ -61,7 +37,7 @@ button.addEventListener("click", gameCards.resetGame);
             clicked.parentElement.classList.add('selected');
             //empieza el contador
             if (minutos === 0 && segundos === 0) {
-              startTimer();
+              gameCards.startTimer();
             }            
         } else {
             segundaCarta = clicked.parentElement.dataset.id;
@@ -72,11 +48,11 @@ button.addEventListener("click", gameCards.resetGame);
                 countCardFlipped++;
                 //funcion match
                 const image = "image/" + clicked.parentElement.dataset.id + ".jpg";
-                setTimeout(match(image), delay);
-                setTimeout(resetGuesses, delay);
+                setTimeout(gameCards.cardMatch(image), delay);
+                setTimeout(gameCards.resetGuesses, delay);
             }
             else {
-                setTimeout(resetGuesses, delay);
+                setTimeout(gameCards.resetGuesses, delay);
                 //cantidad de movimientos disponibles
                 if(movimientosDeError ==0){
                   //alerta cuando pierdes
@@ -92,48 +68,45 @@ button.addEventListener("click", gameCards.resetGame);
                     }else{
                       window.location.reload()
                     }
-                   // console.log(result)
                   })
                   //va diminuyendo las vidas
                 }else{
                   movimientosDeError = movimientosDeError-1;
                  // console.log("menos vida")
                 }
-                
             }
         }
         previousTarget = clicked;
     }
     //cantidad de cartas para ganar
     if(countCardFlipped === 9) {
-      setTimeout(finishMessage, 1000);
+      setTimeout(gameCards.finishMessage, 1000);
     } 
     moveCount++;
     span.innerText = moveCount;
-});
-
-
-const match = () => {
+},
+////////////////////////
+cardMatch: function(){
     let selected = document.querySelectorAll('.selected')
     selected.forEach(card => {
       card.classList.add('match')
-    });
-}
+    })
+},
+//resetear
+resetGuesses:
+ function(){
+  primeraCarta = "";
+  segundaCarta = "";
+  count = 0;
+  previousTarget = null;
 
-const resetGuesses = () => {
-    primeraCarta = "";
-    segundaCarta = "";
-    count = 0;
-    previousTarget = null;
-  
     var selected = document.querySelectorAll('.selected');
     selected.forEach(card => {
       card.classList.remove('selected');
     });
-}
-
-//alert si ganas
-const finishMessage = () => {
+} ,
+//alerta si ganas
+finishMessage:function () {
   swal({
     title: "GANASTE!",
     text: `Lo lograste con ${moveCount} movimientos ,
@@ -150,54 +123,40 @@ const finishMessage = () => {
       //volver a jugar
       window.location.reload()
     }
-    //console.log(result)
   })
-}
-/// temporizador
-let segundos = 0;
-let minutos = 0;
-
-function startTimer() {
+},
+//temporizador
+startTimer:function () {
    setInterval(function() {
-    segundos = checkTime(segundos);
+    segundos = gameCards.checkTime(segundos);
       document.getElementById("timer").innerHTML = `Tiempo ${minutos}:${segundos}`;
       segundos ++;
-
       if (segundos == 60) {
         minutos ++;
         segundos = 0;
       }
   }, 1000);
-}
-function checkTime(i) {
+},
+checkTime:function(i) {
   if (i < 10) {
     i = "0" + i;
   }
   return i;
-}
-//function reset
-const resetGame = () => {
+},
+//funcion resetear
+resetGame:function(){
     window.location.reload();
-}*/
-//boton reset
-//button.addEventListener("click", gameCards.resetGame); 
-
-//////
-//let sound;
-const btnPlayPauseTwo = document.getElementById("btnPlayPauseTree");
-btnPlayPauseTwo.addEventListener("click", gameCards.playPause)
-//let v = document.getElementsByTagName("audio")[0];
-
-/*function playPause(){
-    let v = document.getElementsByTagName("audio")[0];
-   if (!sound) {
-     v.play();
-    sound = true;
+},
+//sonido
+playPause:function (){
+if (!sound) {
+ v.play();
+sound = true;
+}
+else {
+v.pause();
+sound = false;
     }
-
-   else {
-    v.pause();
-    sound = false;
    }
-}*/
-
+  };
+export default gameCards;

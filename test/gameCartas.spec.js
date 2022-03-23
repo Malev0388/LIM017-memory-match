@@ -1,30 +1,43 @@
-import pokemon from '../src/data/pokemon/pokemon.js';
 //import pokemon from '../src/data/pokemon/pokemon.js';
-import btnPlayPause from '../src/main.js';
-/*describe('cartasPokemon', () => {
-  it('should render without crashing', () => {
-    const card = cartasPokemon();
-   // expect(back instanceof HTMLElement).toBe(true);
-    expect(grid.appendChild(card)).toBeCalledWith(expect.any(HTMLElement));
-  });
-});
-*/
+import gameCards from '../src/js/extras.js';
 
-describe('pokemon', () => {
-  it("hola", () => {
- expect(pokemon.items).toBe(pokemon.items);
+describe('game', () => {
+describe('funtionMatch is funtion?', ()=>{
+  it('should be a function', ()=>{
+    expect(typeof gameCards.funtionMatch).toBe('function');
   });
- });
 
- describe('game', () => {
-  it('should be an object', () => {
-    expect(typeof btnPlayPause).toBe(true);
-  });
+  it('should throw TypeError when invoked with wrong argument types', () => {
+    expect(() => gameCards.funtionMatch()).toThrow(TypeError);
+    expect(() => gameCards.funtionMatch(0)).toThrow(TypeError);
+  //  expect(() => gameCards.funtionMatch(null, [])).toThrow(TypeError);
+    expect(() => gameCards.funtionMatch(0, 0)).toThrow(TypeError);
+  });  
 });
-  /*
- describe ('cartasPokemon', ( ) => {
-  it ('should return an array of cards divs', ( ) =>{
-  const cards = cartasPokemon(pokemon);
-  expect(cards.length).toBe(pokemon.length);
+///////
+describe('game.rotateCard', () => {
+  it('should be a function', () => {
+    expect(typeof gameCards.resetGuesses).toBe('function');
   });
-  });*/
+  it('should throw TypeError when invoked with wrong argument types', () => {
+    expect(() => gameCards.resetGuesses()).toThrow(TypeError);
+    expect(() => gameCards.resetGuesses(0)).toThrow(TypeError);
+   // expect(() => gameCards.resetGuesses(null, [])).toThrow(TypeError);
+    expect(() => gameCards.resetGuesses(0, 0)).toThrow(TypeError);
+  }); 
+});
+///////////
+describe('game.rotateCard', () => {
+  it('should be a function', () => {
+    expect(typeof gameCards.startTimer).toBe('function');
+  });
+  it('should throw TypeError when invoked with wrong argument types', () => {
+    expect(() => gameCards.startTimer()).toThrow(TypeError);
+    expect(() => gameCards.startTimer(0)).toThrow(TypeError);
+  //  expect(() => gameCards.startTimer(null, [])).toThrow(TypeError);
+    expect(() => gameCards.startTimer(0, 0)).toThrow(TypeError);
+  });  
+});
+/////
+
+});
