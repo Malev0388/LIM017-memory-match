@@ -37,7 +37,7 @@ Lo primero que hicimos fue organizarnos para realizar nuestro prototipado:
 
 #### Solucion del Problema del Usuario:
 Al realizar nuestras **HISTORIAS DE USUARIO**, nos dimos cuenta que ellos tenian muchas **IDEAS** que les gustaria inplementar a un **JUEGO DE CARTAS**, una de ellas era el sonido, el cual lo implementamos.
-En conclucion **IMPLEMENTAMOS** sus necesidades en proyecto, segun lo requeria en nuestras **HISTORIAS DE USUARIO**.
+En conclusion **IMPLEMENTAMOS** sus necesidades en proyecto, segùn lo requeria en nuestras **HISTORIAS DE USUARIO**.
 
 ## Historia de Usuario
  **USER 1:**
