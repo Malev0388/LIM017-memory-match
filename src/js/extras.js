@@ -13,7 +13,7 @@ let movimientosDeError = 10;
 
 let segundos = 0;
 let minutos = 0;
-let swal;
+//let swal;
 let sound;
 let v = document.getElementsByTagName("audio")[0];
 //llamamdo al array
@@ -23,10 +23,10 @@ let v = document.getElementsByTagName("audio")[0];
 
 const gameCards ={
  funtionMatch:function(event) {
-  /////    
+  /////
   let clicked = event.target;
-    if (clicked.tagName === 'SECTION' || clicked === previousTarget || 
-        clicked.parentElement.classList.contains("match")) 
+    if (clicked.tagName === 'SECTION' || clicked === previousTarget ||
+        clicked.parentElement.classList.contains("match"))
         {
         return;
     }
@@ -38,7 +38,7 @@ const gameCards ={
             //empieza el contador
             if (minutos === 0 && segundos === 0) {
               gameCards.startTimer();
-            }            
+            }
         } else {
             segundaCarta = clicked.parentElement.dataset.id;
             clicked.parentElement.classList.add('selected');
@@ -60,7 +60,7 @@ const gameCards ={
                     title: "UPS!",
                     text: "Te quedaste sin movimientos",
                     icon: "error",
-                    buttons:["volver a Intentarlo?" , "Volver al Inicio"],               
+                    buttons:["volver a Intentarlo?" , "Volver al Inicio"],
                   })
                   .then((result) => {
                     if(result){
@@ -81,7 +81,7 @@ const gameCards ={
     //cantidad de cartas para ganar
     if(countCardFlipped === 9) {
       setTimeout(gameCards.finishMessage, 1000);
-    } 
+    }
     moveCount++;
     span.innerText = moveCount;
 },
