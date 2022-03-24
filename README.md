@@ -530,3 +530,117 @@ Cuando ya estés lista para codear, te sugerimos empezar de esta manera:
 * [ ] UI: Indica al usuario que ganó cuando sea relevante.
 * [ ] UI: Es _responsive_.
 * [ ] UI: La interfaz sigue los fundamentos de _visual design_.
+
+## Definicion del Producto
+#### Proceso del Diseño:
+Para poder hacer nuestro proyecto como dupla hemos tenido que opinar y tomar desiciones de mutuo acuerdo.
+Lo primero que hicimos fue organizarnos para realizar nuestro prototipado:
+- Ordenamos nuestras ideas mediante la plataforma de **TRELLO**.
+- Realizamos nuestras historias de **USUARIO**, para asi saber que puntos priorizar.
+- Realizamos nuestro primer **PROTOTIPO DE BAJA FIDELIDAD**, plasmando las necesidades de nuestros usuarios.
+- Mostramos a los usuarios el **PROTOTIPO DE BAJA FIDELIDAD** para corroborar si era de su agrado.
+- Por ultimo, realizamos nuestro **PROTOTIPO DE ALTA FIDELIDAD** en la plataforma **FIGMA**, basandonos es nuestras historias de usuarios.
+
+#### Solucion del Problema del Usuario:
+Al realizar nuestras **HISTORIAS DE USUARIO**, nos dimos cuenta que ellos tenian muchas **IDEAS** que les gustaria inplementar a un **JUEGO DE CARTAS**, una de ellas era el sonido, el cual lo implementamos.
+En conclucion **IMPLEMENTAMOS** sus necesidades en proyecto, segun lo requeria en nuestras **HISTORIAS DE USUARIO**.
+
+## Historia de Usuario
+ **USER 1:**
+ - **Como:**   "Jugador".
+ - **Quiero:** "Que tenga tiempo".
+ - **Para:** "Saber cuanro me toma terminarlo".
+ ****
+ - **Como:** "Jugador".
+ - **Quiero:** "Que se muestre de alguna forma cuando gane".
+ - **Para:**  "Sentirme bien por mi logro".
+  ****
+ - **Como:** "Jugador".
+ - **Quiero:** "Que tenga un sonido predeterminado".
+ - **Para:**  "Sentirme acompañado".
+  ****
+ - **Como:** "Jugador".
+ - **Quiero:** "Un color de fondo".
+ - **Para:**  "Apreciar mejor las cartas".
+  ****
+ - **Como:** "Jugador".
+ - **Quiero:** "Poder subir una imagen".
+ - **Para:**  "Ser mas personalizada la experiencia".
+  ****
+ - **Como:** "Jugador".
+ - **Quiero:** "Poder ingresar un seudonimo".
+ - **Para:**  "Ser la experiencia mas personalizada".
+ 
+**USER 2**
+ - **Como:** "Usuario de juego en linea".
+ - **Quiero:** "Un boton de inicio".
+ - **Para:**  "Para regresar al home".
+ ****
+ - **Como:** "Usuario de juego en linea.
+ - **Quiero:** "Un boton de resetear".
+ - **Para:**  "Para volver al inicio del juego".
+ ****
+ - **Como:** "Usuario de juego en linea".
+ - **Quiero:** "Que la musica tenga importancia".
+ - **Para:**  "Tener mas emocion al jugar".
+ ****
+ - **Como:** "Usuario de jugador en linea".
+ - **Quiero:** "Ingresar nombre de usuario".
+ - **Para:**  "Ver mi puntaje".
+ ****
+ - **Como:** "Usuario de juego en linea".
+ - **Quiero:** "Que el juego me avise cuando gane".
+ - **Para:**  "Emocionarme y seguir jugando".
+ ****
+ - **Como:** "Usuario de juego en linea".
+ - **Quiero:** "Que el juego tenga sonido opcional".
+ - **Para:**  "Que cuando me aburra pueda mutearlo".
+ ****
+ - **Como:** "Usuario de juego en linea".
+ - **Quiero:** "Que el juego sea responsive".
+ - **Para:**  "Jugar desde pc o movil".
+ 
+## Diseño de la Interfaz de Usuario
+#### Prototipo de Baja Fidelidad:
+
+#### Prototipo de Alta Fidelidad:
+
+## Lista de Problemas Detectado por los Test
+Nos detecto un error en la linea 36 del archivo gameCartasFuction.js
+
+      34 |         count++;
+      35 |         if (count === 1) {
+    > 36 |             primeraCarta = clicked.parentElement.dataset.id;
+         |                                    ^
+      37 |             clicked.parentElement.classList.add('selected');
+      38 |             //empieza el contador
+      39 |             if (minutos === 0 && segundos === 0) {
+
+
+El cuadro de % del Testeo nos muestra los siguientes valores:
+
+------------------------|---------|----------|---------|---------|-------------------
+File                    | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s 
+------------------------|---------|----------|---------|---------|-------------------
+All files               |   31.08 |     7.14 |   14.28 |   31.08 |                   
+ components             |     100 |      100 |     100 |     100 |                   
+  App.js                |     100 |      100 |     100 |     100 |                   
+ js                     |      25 |     7.14 |    7.69 |      25 |                   
+  gameCartasFunction.js |      25 |     7.14 |    7.69 |      25 | 37-161            
+------------------------|---------|----------|---------|---------|-------------------
+
+Test Suites: 1 failed, 1 passed, 2 total
+Tests:       1 failed, 3 passed, 4 total
+Snapshots:   0 total
+Time:        2.526 s
+
+## Plan de Accion
+#### Objetivos de Aprendizaje priorizados
+Nuestras prioridades era poder realizar las siguientes tareas para asi poder **aprender**, las siguientes tareas.
+- Poder mostrar en la pantalla la **DATA**
+- Realizar la funcion de **MATCH**
+- Usar **CONCAT**
+- Subir una **IMAGEN** desde el escritorio
+- Realizar el **DEGRADADO** del fondo de pantalla con css
+- Usar mas **CSS**
+- Poder **RESETEAR** el juego
