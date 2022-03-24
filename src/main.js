@@ -1,18 +1,15 @@
-//import App from './components/App.js';
-
-//document.getElementById('root').appendChild(App());
-
-let sound
 const btnPlayPause = document.getElementById("btnPlayPause");
+let audio = document.getElementsByTagName("audio")[0];
+let sound;
+
 btnPlayPause.addEventListener("click", 
 function playPause(){
-  let v = document.getElementsByTagName("audio")[0];
    if (!sound) {
-     v.play();
+     audio.play();
     sound = true;
     }
    else {
-    v.pause();
+    audio.pause();
     sound = false;
    }
 })
