@@ -9,7 +9,6 @@ ul{
     height: 100px;
     padding: 10px;
     overflow: hidden;
-
 }
 
 li {
@@ -39,7 +38,6 @@ li {
     width: 80px;
     cursor: pointer;
 }
-
 /*//////////////////////////////*/
 *
  {
@@ -56,18 +54,14 @@ body {
     background-attachment: fixed;
     background-image: linear-gradient(160deg, #1A3AAD 0%, #3589EB 94%);
 }
-
 .container h1 {
     text-align: center;
     font-size: 5rem;
-
 }
-
 .container p {
     font-size: 2rem;
     margin-left: 50px;
 }
-
 .container button {
     margin-top: -5px;
     font-size: 20px;
@@ -81,7 +75,6 @@ body {
     font-family: sans-serif;
     cursor: pointer;
 }
-
 .grid {
     max-width: 960px;
     margin: 0 auto;
@@ -90,34 +83,27 @@ body {
     justify-content: space-evenly;
     cursor: pointer;
   }
-
 .card {
     position: relative;
     transition: all 0.3s linear;
     transform-style: preserve-3d;
     margin: 5px;
-
 }
-
 .card,
 .back,
 .front {
     height:240px;
-    width: 150px;
-
+  width: 150px;
 }
-
 .back,
 .front {
     position: absolute;
     backface-visibility: hidden;
 }
-
 .front {
     border-radius: 12px;
     background: rgba(242, 173, 40, 1) url("../Img/cardFront.jpeg") no-repeat center center / contain;
 }
-
 .back {
     padding: 10px;
     border-radius: 12px;
@@ -127,24 +113,18 @@ body {
     background-repeat: no-repeat;
     background-position: center center;
 }
-
 .selected {
     transform: rotateY(180deg);
 }
-
 .match{
     transform: rotateY(180deg);
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center center;
 }
-
 .text{
     color: white;
 }
-
-
-
 .btnOnOffTree{
     display: flex;
     flex-direction: column;
@@ -157,7 +137,6 @@ body {
     height: 80px;
     width: 80px;
     margin-top: -112px;
-    /*margin-left: 19px;*/
     margin-right: 17px;
     border-radius: 100px;
     box-shadow: 5px 10px 20px #000000;
@@ -188,7 +167,6 @@ body {
     margin: 17px;
     margin-top: 5px;
     align-items: stretch;
-    /*padding: 19px;*/
   }
   div.back{
     color: transparent;
@@ -219,20 +197,6 @@ body {
     border-color: rgba(213, 155, 9, 2);
 
   }
-  /*.grid {
-      max-width: 960px;
-      margin: 0 auto;
-      display: flex;
-      flex-wrap: wrap;
-      flex-direction: row;
-      justify-content: center;
-  }
-  .card {
-      position: relative;
-      margin: 3px;
-      height:240px;
-      width: 150px;
-    }*/
 }
 
 @media (max-height:450px){
@@ -248,7 +212,6 @@ body {
       justify-content: space-around;
       margin: 17px;
       margin-top: 5px;
-      /*padding: 19px;*/
     }
     div.back{
       color: transparent;
@@ -275,18 +238,5 @@ body {
       box-shadow: 5px 10px 20px #000000;
       border-color: rgba(213, 155, 9, 2);
     }
-    /*.grid {
-      max-width: 960px;
-      margin: 0 auto;
-      display: flex;
-      flex-wrap: wrap;
-      flex-direction: row;
-      justify-content: center;
-  }
-  .card {
-      position: relative;
-      margin: 3px;
-      height:240px;
-      width: 150px;
-    }*/
+
 }
