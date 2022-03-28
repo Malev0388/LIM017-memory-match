@@ -1,5 +1,5 @@
  .body-user {
-    background: url(../img/ImgUser.jpg) no-repeat center fixed;
+    background: url("../img/ImgUser.jpg") no-repeat center fixed;
     background-size: cover;
   }
   .container{
@@ -97,20 +97,13 @@
     border-color: rgba(213, 155, 9, 2);
   }
   .iconPlay-two{
-    background-image: url("./img/play.svg");
+   /* background-image: url("./img/play.svg");*/
     width: 60%;
     align-items: center;
     margin-top: 22px;
     margin-left: 12px;
   }
 
-  .iconPause-two{
-    background-image: url("./img/mute.svg");
-    width: 60%;
-    align-items: center;
-    margin-top: 22px;
-    margin-left: 12px;
-  }
 
   @media (max-width:760px){
     .container{

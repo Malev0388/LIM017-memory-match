@@ -1,5 +1,5 @@
 body {
-  background-image: url("../Img/FondoPantallaInicio.png");
+  background-image: url("../src/img/FondoPantallaInicio.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -20,7 +20,7 @@ body {
 }
 
 .iconPlay{
-  background-image: url("./img/play.svg");
+ /* background-image: url("../src/img/play.svg");*/
   width: 60%;
   align-items: center;
   margin-top: 22px;
