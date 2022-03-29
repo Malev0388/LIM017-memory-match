@@ -25,28 +25,27 @@ que una jugadora pueda jugar sola, en el navegador.
 El objetivo principal de este proyecto es que aprendas a diseñar y construir una
 interfaz web basada en data e interacción con la usuaria.
 
-## Definicion del Producto
+## Definición del Producto
 #### Proceso del Diseño:
-Para poder hacer nuestro proyecto como dupla hemos tenido que opinar y tomar desiciones de mutuo acuerdo.
+Para poder hacer nuestro proyecto, como dupla tuvimos que opinar y tomar desiciones de mutuo acuerdo.
 Lo primero que hicimos fue organizarnos para realizar nuestro prototipado:
 - Ordenamos nuestras ideas mediante la plataforma de **TRELLO**.
-- Realizamos nuestras historias de **USUARIO**, para asi saber que puntos priorizar.
+- Realizamos nuestras historias de **USUARIO**, para así saber qué puntos priorizar.
 - Realizamos nuestro primer **PROTOTIPO DE BAJA FIDELIDAD**, plasmando las necesidades de nuestros usuarios.
 - Mostramos a los usuarios el **PROTOTIPO DE BAJA FIDELIDAD** para corroborar si era de su agrado.
-- Por ultimo, realizamos nuestro **PROTOTIPO DE ALTA FIDELIDAD** en la plataforma **FIGMA**, basandonos es nuestras historias de usuarios.
+- Por último, realizamos nuestro **PROTOTIPO DE ALTA FIDELIDAD** en la plataforma **FIGMA**, basándonos es nuestras historias de usuarios.
 
-#### Solucion del Problema del Usuario:
-Al realizar nuestras **HISTORIAS DE USUARIO**, nos dimos cuenta que ellos tenian muchas **IDEAS** que les gustaria inplementar a un **JUEGO DE CARTAS**, una de ellas era el sonido, el cual lo implementamos.
-En conclusion **IMPLEMENTAMOS** sus necesidades en proyecto, segùn lo requeria en nuestras **HISTORIAS DE USUARIO**.
+#### Solución del Problema del Usuario:
+Al realizar nuestra **ENCUESTA**, nos dimos cuenta que los usuarios tenian muchas **IDEAS** que aportar en el **JUEGO DE CARTAS**, siendo "el sonido" lo que resaltó entre estas. Podemos concluir indicando que, logramos el objetivo de nuestro proyecto **IMPLEMENTANDO** soluciones ante las necesidades requeridas en nuestras **HISTORIAS DE USUARIO**.
 
 ## Historia de Usuario
  **USER 1:**
  - **Como:**   "Jugador".
  - **Quiero:** "Que tenga tiempo".
- - **Para:** "Saber cuanro me toma terminarlo".
+ - **Para:** "Saber cuánto me toma terminarlo".
  ****
  - **Como:** "Jugador".
- - **Quiero:** "Que se muestre de alguna forma cuando gane".
+ - **Quiero:** "Que se muestre de alguna forma cuándo gane".
  - **Para:**  "Sentirme bien por mi logro".
   ****
  - **Como:** "Jugador".
@@ -59,41 +58,41 @@ En conclusion **IMPLEMENTAMOS** sus necesidades en proyecto, segùn lo requeria 
   ****
  - **Como:** "Jugador".
  - **Quiero:** "Poder subir una imagen".
- - **Para:**  "Ser mas personalizada la experiencia".
+ - **Para:**  "Ser más personalizada la experiencia".
   ****
  - **Como:** "Jugador".
- - **Quiero:** "Poder ingresar un seudonimo".
- - **Para:**  "Ser la experiencia mas personalizada".
- 
+ - **Quiero:** "Poder ingresar un seudónimo".
+ - **Para:**  "Ser la experiencia más personalizada".
+
 **USER 2**
- - **Como:** "Usuario de juego en linea".
- - **Quiero:** "Un boton de inicio".
+ - **Como:** "Usuario de juego en línea".
+ - **Quiero:** "Un botón de inicio".
  - **Para:**  "Para regresar al home".
  ****
- - **Como:** "Usuario de juego en linea.
- - **Quiero:** "Un boton de resetear".
+ - **Como:** "Usuario de juego en línea.
+ - **Quiero:** "Un botón de resetear".
  - **Para:**  "Para volver al inicio del juego".
  ****
- - **Como:** "Usuario de juego en linea".
- - **Quiero:** "Que la musica tenga importancia".
- - **Para:**  "Tener mas emocion al jugar".
+ - **Como:** "Usuario de juego en línea".
+ - **Quiero:** "Que la música tenga importancia".
+ - **Para:**  "Tener más emoción al jugar".
  ****
- - **Como:** "Usuario de jugador en linea".
+ - **Como:** "Usuario de jugador en línea".
  - **Quiero:** "Ingresar nombre de usuario".
  - **Para:**  "Ver mi puntaje".
  ****
- - **Como:** "Usuario de juego en linea".
+ - **Como:** "Usuario de juego en línea".
  - **Quiero:** "Que el juego me avise cuando gane".
  - **Para:**  "Emocionarme y seguir jugando".
  ****
- - **Como:** "Usuario de juego en linea".
+ - **Como:** "Usuario de juego en línea".
  - **Quiero:** "Que el juego tenga sonido opcional".
  - **Para:**  "Que cuando me aburra pueda mutearlo".
  ****
- - **Como:** "Usuario de juego en linea".
+ - **Como:** "Usuario de juego en línea".
  - **Quiero:** "Que el juego sea responsive".
  - **Para:**  "Jugar desde pc o movil".
- 
+
 ## Diseño de la Interfaz de Usuario
 #### Prototipo de Baja Fidelidad:
 ![Boceto a lapiz_1](https://user-images.githubusercontent.com/74880454/160026368-1b8d7194-baa8-4d8c-8f37-c03d088e15c0.jpeg)
@@ -108,7 +107,7 @@ En conclusion **IMPLEMENTAMOS** sus necesidades en proyecto, segùn lo requeria 
 ![7  Juego cartas_UPS INTENTALO DE NUEVO](https://user-images.githubusercontent.com/74880454/160026567-55343858-afb0-4c29-ba57-7dfc9692ceae.png)
 
 ## Lista de Problemas Detectado por los Test
-Nos detecto un error en la linea 36 del archivo gameCartasFuction.js
+Nos detectó un error en la línea 36 del archivo gameCartasFuction.js
 
       34 |         count++;
       35 |         if (count === 1) {
@@ -122,7 +121,7 @@ Nos detecto un error en la linea 36 del archivo gameCartasFuction.js
 El cuadro de % del Testeo nos muestra los siguientes valores:
 
 ------------------------|---------|----------|---------|---------|-------------------
-File                    | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s 
+File                    | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s
 ------------------------|---------|----------|---------|---------|-------------------
 All files               |   31.08 |     7.14 |   14.28 |   31.08 |                   
  components             |     100 |      100 |     100 |     100 |                   
@@ -136,16 +135,16 @@ Tests:       1 failed, 3 passed, 4 total
 Snapshots:   0 total
 Time:        2.526 s
 
-## Plan de Accion
+## Plan de Acción
 #### Objetivos de Aprendizaje priorizados
-Nuestras prioridades era poder realizar las siguientes tareas para asi poder **aprender**, las siguientes tareas.
-- Poder mostrar en la pantalla la **DATA**
-- Realizar la funcion de **MATCH**
+Nuestra prioridad era realizar las siguientes tareas, enfocándonos en nuestro **aprendizaje**:
+- Mostrar en la pantalla la **DATA**
+- Realizar la función **MATCH**
 - Usar **CONCAT**
 - Subir una **IMAGEN** desde el escritorio
-- Realizar el **DEGRADADO** del fondo de pantalla con css
-- Usar mas **CSS**
-- Poder **RESETEAR** el juego
+- Realizar el **DEGRADADO** del fondo de pantalla con CSS
+- Usar más **CSS**
+- **RESETEAR** el juego
 
 ## **DEMO DEL PRODUCTO FINAL PC**
 ![1  Pantalla de bienvenida_DESKTOP](https://user-images.githubusercontent.com/74880454/160026849-560810e3-166c-4456-91e5-ef0b914f9d8b.png)
@@ -159,6 +158,3 @@ https://user-images.githubusercontent.com/74880454/160027044-cea4ab32-7a08-4eaf-
 
 ## **DEMO DEL PRODUCTO FINAL RESPONSIVE**
 ![5  Pantalla_juego de cartas_RESPONSIVE](https://user-images.githubusercontent.com/74880454/160027121-37788117-bbaf-48e0-9750-cb6f4ab95c61.png)
-
-
-
