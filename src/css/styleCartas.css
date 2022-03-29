@@ -102,7 +102,7 @@ body {
 }
 .front {
     border-radius: 12px;
-    background: rgba(242, 173, 40, 1) url("../img/cardFront.jpeg") no-repeat center center / contain;
+    background: rgba(242, 173, 40, 1) url("../img/cardFrontEnd.jpg") no-repeat center center / contain;
 }
 .back {
     padding: 10px;
@@ -146,7 +146,6 @@ body {
     border-color: rgba(213, 155, 9, 2);
   }
   .iconPlay-tree{
-    background-image: url("./img/play.svg");
     width: 60%;
     align-items: center;
     margin-top: 22px;
