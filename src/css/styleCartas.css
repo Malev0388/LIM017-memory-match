@@ -102,7 +102,7 @@ body {
 }
 .front {
     border-radius: 12px;
-    background: rgba(242, 173, 40, 1) url("../img/cardFront.png") no-repeat center center / contain;
+    background: rgba(242, 173, 40, 1) url("../img/cardFront.jpg") no-repeat center center / contain;
 }
 .back {
     padding: 10px;
